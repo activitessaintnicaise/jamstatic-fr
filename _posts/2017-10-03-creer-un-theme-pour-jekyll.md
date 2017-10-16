@@ -13,7 +13,7 @@ source:
 {: .intro }
 Si vous êtes designer web, que vous savez écrire des pages HTML,
 les mettre en forme avec CSS, voire les enrichir avec du JavaScript, vous
-n'aurez aucun mal à développer des thèmes pour Jekyll. Le language de templating
+n'aurez aucun mal à développer des thèmes pour Jekyll. Le langage de templating
 [Liquid](https://shopify.github.io/liquid/) a été conçu par Shopify pour les web
 designers et se prend rapidement en main. Dans cet article, [David Darnes](https://darn.es/), le développeur du thème [Alembic](https://alembic.darn.es) explique dans un premier temps comment utiliser une 💎 gem de thème pour Jekyll.
 
@@ -21,7 +21,7 @@ designers et se prend rapidement en main. Dans cet article, [David Darnes](https
 
 Tout site correctement structuré permet de présenter facilement ses contenus à
 l'aide d'un thème, à l'image de ce que souhaite son propriétaire ou son
-créateur. Jekyll n'échappe pas à la régle. Les pages, les articles et autres
+créateur. Jekyll n'échappe pas à la règle. Les pages, les articles et autres
 formes de contenu formatés peuvent être présentés à l'aide de différents modèles.
 
 Les thèmes pour Jekyll existent depuis un moment, mais le processus
@@ -32,7 +32,7 @@ en quelques lignes de code.
 ## Comment fonctionnent les thèmes ?
 
 Les thèmes pour Jekyll permettent de packager tous les modèles et les fichiers
-relatifs à la présenation dans une [`gem` Ruby](http://guides.rubygems.org/what-is-a-gem/), exactement comme c'est déjà le cas pour les plugins. Cela signifie qu'un design
+relatifs à la présentation dans une [`gem` Ruby](http://guides.rubygems.org/what-is-a-gem/), exactement comme c'est déjà le cas pour les plugins. Cela signifie qu'un design
 peut s'appliquer simplement à un ou plusieurs sites, sans que la couche de
 présentation ne vienne semer la pagaille dans les fichiers de votre site.
 
@@ -49,7 +49,7 @@ présentation ne vienne semer la pagaille dans les fichiers de votre site.
 <figcaption>Exemple de structure de site sous Jekyll utilisant une 💎 gem de thème</figcaption>
 </figure>
 
-Il est également possible de prendre le pas sur les fichiers de thèmes, un peu à la manière des [thèmes enfants dans WordPress](https://code.tutsplus.com/articles/how-to-modify-the-parent-theme-behavior-within-the-child-thème--wp-31006). Si vous ne connnaissez pas le principe, cela signifie qu'un fichier de votre site sera prioritaire sur le fichier du thème situé au même endroit et qui porte le même nom.
+Il est également possible de prendre le pas sur les fichiers de thèmes, un peu à la manière des [thèmes enfants dans WordPress](https://code.tutsplus.com/articles/how-to-modify-the-parent-theme-behavior-within-the-child-thème--wp-31006). Si vous ne connaissez pas le principe, cela signifie qu'un fichier de votre site sera prioritaire sur le fichier du thème situé au même endroit et qui porte le même nom.
 
 ## Comment utiliser un thème ?
 
@@ -84,7 +84,7 @@ Ensuite, il faut déclarer l'utilisation du thème dans votre fichier de configu
 thème: alembic-jekyll-thème
 ```
 
-Une fois que vous avez modifier ces deux fichiers, il va falloir utiliser
+Une fois que vous avez modifié ces deux fichiers, il va falloir utiliser
 [Bundler](http://bundler.io/) pour installer notre nouveau thème et pouvoir
 générer et prévisualiser notre site. Dans votre terminal tapez la commande
 suivante :
@@ -116,15 +116,15 @@ Pour ma part j'en ai développé deux :
 
 Ces deux thèmes sont compatibles avec Siteleaf, vous pouvez donc configurer un nouveau site sur Sileaf sans problème. Je vous recommande aussi [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/), un thème très complet développé par Michael Rose. Michael développe des thèmes pour Jekyll depuis un moment et son code est très propre.
 
-Pour ceux d'entre vous qui utiliset GitHub Pages pour héberger leur site Jekyll,
+Pour ceux d'entre vous qui utilisent GitHub Pages pour héberger leur site Jekyll,
 seuls [quelques thèmes sont autorisés](https://pages.github.com/themes/) par
 défaut.
 
 C'est en partie la raison pour laquelle, selon moi, les thèmes n'ont peut être
 pas encore l'ampleur qu'ils pourraient avoir.
 
-Beacoup d'utilisateurs de Jekyll se reposent sur GitHub Pages pour gérer et
-héberger leur site, et sont donc limités à ces quelques thèmes. Il est néamoins
+Beaucoup d'utilisateurs de Jekyll se reposent sur GitHub Pages pour gérer et
+héberger leur site, et sont donc limités à ces quelques thèmes. Il est néanmoins
 possible de contourner cette limitation en utilisant par exemple la formule
 [Siteleaf Team+ plan](https://www.siteleaf.com/plans/) qui vous permet
 [d'utiliser n'importe quel thème
@@ -145,10 +145,10 @@ surtout que vous souhaitez qu'il soit utilisé par d'autres utilisateurs de
 Jekyll (et de Sitelaf) :
 
 1. **Testez votre thème :** Vous ne testerez jamais assez. Le meilleur moyen est encore de suivre votre propre documentation et de commencer de zéro. Testez votre thème avec différentes sortes de contenus. Les thèmes doivent pouvoir habiller différents types et différentes tailles de contenus.
-2. **Fournissez une bonne documentation :** Tout bon thème s'accompagne d'une documentatire claire et détaillée. C'est même un pré-requis spécifique si vous souhaitez soumettre voter thème  sur des marketplaces comme ThemeForest. Assurez vous que le processus d'installation soit simple à suivre et que toutes les fonctionnalités et les options sont documentées. Je fais de mon mieux pour garder la [documentation de l'utlisation d' Alembic](https://github.com/daviddarnes/alembic#alembic) à jour.
+2. **Fournissez une bonne documentation :** Tout bon thème s'accompagne d'une documentation claire et détaillée. C'est même un pré-requis spécifique si vous souhaitez soumettre votre thème sur des marketplaces comme ThemeForest. Assurez vous que le processus d'installation soit simple à suivre et que toutes les fonctionnalités et les options sont documentées. Je fais de mon mieux pour garder la [documentation de l'utilisation d' Alembic](https://github.com/daviddarnes/alembic#alembic) à jour.
 3.
-3. **Évitez les choses trop complexes :** J'ai vu beaucoup de thèmes WordPress échoués, car ils voulaient trop en faire. Ce n'est pas forcément simple mais essayez de trouver un juste équilibre entre le nombre d'options porposé et celles activées par défaut. Vous ne voulez pas générer de frustration chez les gens en vous éloignant trop de l'aspect de la démo. De plus, Jekyll est un générateur de site statique qui prône la simplicité, votre thème devrait s'en insipirer.
-4. **Définissez un usage :** Concevoire un thème suceptible de plaire au plus grand monde _et_ à un certaine type d'industrie peut s'avérer difficile. Je ne dis pas qu'il faut faire faire quelque chose de très spécifique pour l'agence immobilière du coin de la rue, mais peut-être quelque chose en relation avec les sites immobiliers en général. Il y a beaucoup de thèmes génériue qui essaient de répondre à un maximum d'attentes, et vous feriez peut-être bien de ne pas essayer d'aller sur ce terrain mais à la rencontre d'une audience plus ciblée.
+3. **Évitez les choses trop complexes :** J'ai vu beaucoup de thèmes WordPress échoués, car ils voulaient trop en faire. Ce n'est pas forcément simple mais essayez de trouver un juste équilibre entre le nombre d'options proposé et celles activées par défaut. Vous ne voulez pas générer de frustration chez les gens en vous éloignant trop de l'aspect de la démo. De plus, Jekyll est un générateur de site statique qui prône la simplicité, votre thème devrait s'en inspirer.
+4. **Définissez un usage :** Concevoir un thème susceptible de plaire au plus grand monde _et_ à un certaine type d'industrie peut s'avérer difficile. Je ne dis pas qu'il faut faire faire quelque chose de très spécifique pour l'agence immobilière du coin de la rue, mais peut-être quelque chose en relation avec les sites immobiliers en général. Il y a beaucoup de thèmes génériques qui essaient de répondre à un maximum d'attentes, et vous feriez peut-être bien de ne pas essayer d'aller sur ce terrain mais à la rencontre d'une audience plus ciblée.
 5. **Concevez avec l'extensibilité en tête :** Il est fort probable que les utilisateurs de votre thème veuillent le personnaliser, essayez de concevoir votre thème de façon standard. Nommez vos modèles et vos fichiers en fonction [des conventions](https://jekyllrb.com/docs/structure/), et utilisez des noms explicites pour vos `_includes` (par exemple `icon.html` si c'est pour insérer une icône).
 
 ## Comment créer un thème pour Jekyll ?
